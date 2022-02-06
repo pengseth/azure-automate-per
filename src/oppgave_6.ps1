@@ -60,15 +60,4 @@ Write-Host "meg: $(kortstokkprint($meg))"
 Write-Host "magnus: $(kortstokkprint($magnus))"
 Write-Host "kortstokk: $(kortstokkprint($cards))"
 
-
-#oppgave 6 start
-#mulig alternativ (ikke ferdig)
-# $meg = $kortstokk[0..1]
-# $kortstokk = $kortstokk[2..$kortstokk.Length]
-# $magnus = $kortstokk[3..4]
-# $kortstokk = $kortstokk[4..$kortstokk.Count]
-# $magnus = $kortstokk[0..1]
-# Write-Output "meg: $(kortStokkTilStreng -kortstokk $meg)"
-# $magnus = $kortstokk[0..1]
-# Write-Output "magnus: $(kortStokkTilStreng -kortstokk $magnus)"
-# $kortstokk = $kortstokk[2..$kortstokk.Count]
+# Ferdig oppgave 6
