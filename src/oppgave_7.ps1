@@ -84,21 +84,28 @@ function skrivUtResultat {
         [object[]]
         $kortstokkmeg
         )
+# Her benyttes "Write-Output" som returnerer en streng
     Write-Output "Vinner: $vinner"
-    Write-Output "magnus |$(sumpoengkortstokk -kortstokk $kortstokkmagnus) | $(kortstokktilstreng -kortstokk $kortstokkmagnus)"
-    Write-Output "meg |$(sumpoengkortstokk -kortstokk $kortstokkmeg)    |  $(kortstokktilstreng -kortstokk $kortstokkmeg)"
+    Write-Output "magnus | $(sumpoengkortstokk -kortstokk $kortstokkmagnus) | $(kortstokktilstreng -kortstokk 
+    $kortstokkmagnus)"
+    Write-Output "meg | $(sumpoengkortstokk -kortstokk $kortstokkmeg)    | $(kortstokktilstreng -kortstokk 
+    $kortstokkmeg)"
 }
-#Blackjack verdi er 21
+# Blackjack verdi er 21
 $blackjack = 21
 
-if (((sumpoengkortstokk -kortstokk $meg) -eq $blackjack) -and ((sumpoengkortstokk -kortstokk $magnus) -eq $blackjack)) {
-    skrivUtResultat -vinner "draw" -kortstokkmagnus $magnus -kortstokkmeg $meg
-}
-elseif ((sumpoengkortstokk -kortstokk $meg) -eq $blackjack) {
+#if (((sumpoengkortstokk -kortstokk $meg) -eq $blackjack) -and ((sumpoengkortstokk -kortstokk $magnus) -eq $blackjack)) {
+#    skrivUtResultat -vinner "draw" -kortstokkmagnus $magnus -kortstokkmeg $meg
+#}
+if ((sumpoengkortstokk -kortstokk $meg) -eq $blackjack) {
     skrivUtResultat -vinner "meg" -kortstokkmagnus $magnus -kortstokkmeg $meg
     exit
 }
 elseif ((sumpoengkortstokk -kortstokk $magnus) -eq $blackjack) {
    skrivUtResultat -vinner "magnus" -kortstokkmagnus $magnus -kortstokkmeg $meg
    exit
+}
+elseif (((sumpoengkortstokk -kortstokk $meg) -eq $blackjack) -and ((sumpoengkortstokk -kortstokk $magnus) -eq $blackjack)) {
+    skrivUtResultat -vinner "draw" -kortstokkmagnus $magnus -kortstokkmeg $meg
+    exit
 }
