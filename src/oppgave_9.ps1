@@ -4,9 +4,10 @@
 param (
     [Parameter()]
     [string]
-#   $Urlkortstokk = "https://nav-deckofcards.herokuapp.com/shuffle"
-   $Urlkortstokk = 'https://azure-gvs-test-cases.azurewebsites.net/api/vinnermeg'
-#    $Urlkortstokk = 'https://azure-gvs-test-cases.azurewebsites.net/api/vinnermagnus'   
+#    $Urlkortstokk = "https://nav-deckofcards.herokuapp.com/shuffle"
+#    $Urlkortstokk = 'https://azure-gvs-test-cases.azurewebsites.net/api/vinnermeg'
+#    $Urlkortstokk = 'https://azure-gvs-test-cases.azurewebsites.net/api/vinnermagnus'
+     $Urlkortstokk = 'https://azure-gvs-test-cases.azurewebsites.net/api/tapermagnus'   
 #    $Urlkortstokk = 'https://azure-gvs-test-cases.azurewebsites.net/api/vinnerdraw' 
  )
 #Stopp ved feil
