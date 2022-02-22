@@ -4,8 +4,11 @@
 param (
     [Parameter()]
     [string]
-    $Urlkortstokk = "https://nav-deckofcards.herokuapp.com/shuffle"
-)
+#    $Urlkortstokk = "https://nav-deckofcards.herokuapp.com/shuffle"
+#    $Urlkortstokk = 'https://azure-gvs-test-cases.azurewebsites.net/api/vinnermeg'
+    $Urlkortstokk = 'https://azure-gvs-test-cases.azurewebsites.net/api/vinnermagnus'   
+#    $Urlkortstokk = 'https://azure-gvs-test-cases.azurewebsites.net/api/vinnerdraw' 
+ )
 #Stopp ved feil
 $ErrorActionPreference = 'SilentlyContinue'
 #$ErrorActionPreference = [System.Management.Automations.ActionPreference]::SilentlyContinue
