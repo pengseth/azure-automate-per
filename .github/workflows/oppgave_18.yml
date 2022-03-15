@@ -1,5 +1,9 @@
 name: Oppgave 18
 
+on:
+  push:
+    paths:
+      -funcapp/*
 workflow_dispatch:
 
 jobs:
