@@ -2,6 +2,8 @@ name: oppgave 17
 
 on:
   push:
+    paths:
+      - src/funcApp/*
   workflow_dispatch:
 
 jobs:
