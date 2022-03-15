@@ -19,7 +19,7 @@ jobs:
         run: .\src\oppgave_10.ps1
 
       - name: Login via Az module
-        uses: azure/login@1
+        uses: azure/login@v1
         with:
           creds: ${{ secrets.SECRET15MARS22 }}
           enable-AzPSSession: true
