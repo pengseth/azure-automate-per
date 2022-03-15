@@ -3,7 +3,7 @@ name: oppgave 17
 on:
   push:
     paths:
-      - src/funcApp/*
+      - funcApp/*
   workflow_dispatch:
 
 jobs:
